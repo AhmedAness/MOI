@@ -194,6 +194,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rounded_edittext"
                     android:hint="جهة الاصدار"
+
                     android:inputType="textPersonName"
                     android:padding="15dp"
                     tools:ignore="MissingConstraints"
