@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="20dp"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/mUILayout">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/connectivity"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/blue"
+                    android:clickable="true"
+                    tools:ignore="RtlCompat">
+                        <ImageView
+                            android:id="@+id/imgView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center"
+                            android:src="@drawable/connectivity"
+                            tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="التواصل"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        tools:ignore="MissingConstraints"
+                        app:layout_constraintBottom_toBottomOf="@+id/connectivity"
+                        />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/violation"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/blue"
+                    android:clickable="true"
+                    android:visibility="visible"
+                    tools:ignore="RtlCompat">
+
+                        <ImageView
+                            android:id="@+id/imgView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/violation"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="@+id/violation"
+                            android:text="المخالفات"
+                            android:textSize="14sp"
+                            tools:ignore="MissingConstraints" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="visible">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/rellay_setting"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/blue"
+                    android:clickable="true"
+                    tools:ignore="RtlCompat">
+
+                        <ImageView
+
+                            android:id="@+id/imgView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/settings"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="@+id/rellay_setting"
+                            android:text="الاعدادات"
+                            android:textSize="14sp"
+                            tools:ignore="MissingConstraints" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/rellay_Inv"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/blue"
+                    android:clickable="true"
+                    tools:ignore="RtlCompat">
+
+                        <ImageView
+                            android:id="@+id/imgView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="62dp"
+                            android:adjustViewBounds="true"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_inven"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="@+id/rellay_Inv"
+                            android:text="RFID"
+                            android:textSize="14sp"
+                            tools:ignore="MissingConstraints" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/rellay_barcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:clickable="true"
+                    tools:ignore="RtlCompat">
+
+                        <ImageView
+                            android:id="@+id/imgView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_barcode"
+                            android:scaleType="centerInside"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/rellay_barcode"
+                            android:text="Barcode"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            tools:ignore="MissingConstraints" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_map"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@color/darkblue"
+                    android:clickable="true"
+                    tools:ignore="RtlCompat">
+
+
+                        <ImageView
+                            android:id="@+id/imgView6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgView6"
+                            android:layout_centerHorizontal="true"
+                            android:text="Map"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rellay_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.55"
+                    android:background="@color/darkviolet"
+                    android:clickable="true"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgView7"
+                            android:layout_centerHorizontal="true"
+                            android:text="Weather"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rellay_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:background="@color/violet"
+                    android:clickable="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/imgView8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgView8"
+                            android:layout_centerHorizontal="true"
+                            android:text="Settings"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

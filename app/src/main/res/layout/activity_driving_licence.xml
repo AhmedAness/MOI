@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DrivingLicence"
+    android:fillViewport="true">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/DarkGray">
+
+        <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="715dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Plat Number"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="20dp" />
+
+                <Button
+                    android:id="@+id/Get"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_edittext"
+                    android:text="Get"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/CarOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="مالك السياره"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:text="مالك السياره "
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/NAtionalID"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="الرقم القومي"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:text="الرقم القومي"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/TypeOfLicense"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="نوع الترخيص"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:text="نوع الترخيص"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/CarColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="لون السياره"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:text="لون السياره"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/Issuer"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="جهة الاصدار"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:text="جهة الاصدار"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="45dp">
+
+
+                    <EditText
+                        android:id="@+id/To"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="الي"
+                        android:inputType="textPersonName" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:padding="8dp"
+                        android:src="@drawable/minus"/>
+
+                    <EditText
+                        android:id="@+id/From"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="من"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        tools:ignore="MissingConstraints"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:text="تاريخ بدايه الترخيص"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/Notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="ملاحظات"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:text="ملاحظات"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/Next"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:text="التالي"
+                    tools:ignore="RtlCompat" />
+
+                <Button
+                    android:id="@+id/Previous"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="رجوع"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

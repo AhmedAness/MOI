@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/DarkGray"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Server.ServerData">
+
+
+    <ImageView
+        android:id="@+id/LogoImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/LogoImage"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ServerName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="15dp"
+            android:hint="Server Name"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"/>
+
+        <EditText
+            android:id="@+id/PortNumber"
+            android:layout_marginTop="56dp"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Port Number"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPassword"
+            tools:ignore="MissingConstraints"/>
+
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="Save"
+            tools:ignore="MissingConstraints"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
