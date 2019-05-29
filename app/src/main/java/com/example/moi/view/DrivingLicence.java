@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ScrollView;
 
 import com.example.moi.R;
 
@@ -23,6 +25,11 @@ public class DrivingLicence extends AppCompatActivity {
     private void Inint() {
         Next=findViewById(R.id.Next);
         Back=findViewById(R.id.Previous);
+
+        ScrollView view = (ScrollView)findViewById(R.id.scrollView);
+        view.setDescendantFocusability(ViewGroup.FOCUS_BEFORE_DESCENDANTS);
+        view.setFocusable(true);
+        view.setFocusableInTouchMode(true);
     }
 
     private void Onclick() {
