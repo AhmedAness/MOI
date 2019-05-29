@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.DrivingLicence"></activity>
+        <activity android:name=".view.Reconciliation"></activity>
+        <activity android:name=".view.WithdrawalLicence" />
+        <activity android:name=".view.Violations" />
+        <activity android:name=".view.DrivingLicence" />
         <activity android:name=".view.CarInfo" />
         <activity android:name=".view.Server.ServerData" />
         <activity android:name=".view.Login.Login" />

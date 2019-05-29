@@ -28,9 +28,11 @@ public class Splash extends AppCompatActivity {
 
     private void StartLogin() {
         startActivity(new Intent(this, Login.class));
+        finish();
     }
 
     private void StartMain() {
         startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 }

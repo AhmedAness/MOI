@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.moi.R;
+import com.example.moi.model.User;
 import com.example.moi.presenter.MainPresenter;
 import com.example.moi.view.Server.ServerData;
 
@@ -43,7 +44,7 @@ public class Login extends AppCompatActivity  implements ILogin {
             @Override
             public void onClick(View view) {
                 if (Validate()){
-                    presenter.OnLogin(Name.getText().toString(),Password.getText().toString());
+                    presenter.OnLogin(new User(Name.getText().toString(),Password.getText().toString()));
                 }
             }
         });
